@@ -1,0 +1,42 @@
+eureka:
+  client:
+    register-with-eureka: false
+server:
+  port: 8222
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: users
+          uri: http://localhost:8071
+          predicates:
+            - Path=/users/**
+
+        - id: classes
+          uri: http://localhost:8060
+          predicates:
+            - Path=/levels/**
+        - id: subjects
+          uri: http://localhost:8062
+          predicates:
+            - Path=/Subjects/**
+        - id: notifications
+          uri: http://localhost:8040
+          predicates:
+            - Path=/api/v1/notifications/**
+        - id: ReportingAnalytics
+          uri: http://localhost:8063
+          predicates:
+            - Path=/api/v1/Analytics/**
+
+
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0

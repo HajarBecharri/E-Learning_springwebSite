@@ -1,0 +1,34 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+server:
+  port: 8062
+spring:
+  application:
+    name: subjects
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/subjectdb
+    username: root
+    password:
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
