@@ -1,7 +1,0 @@
-
-spring:
-  application:
-    name: ReportingAnalytics
-  config:
-    import: optional:configserver:http://localhost:8888
-
