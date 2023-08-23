@@ -1,11 +1,8 @@
 package com.example.Quiz.Controllers;
 
-import com.example.Quiz.Services.ResponseService.IResponseService;
+
 import com.example.Quiz.Services.StudRespService.IResStudService;
 import com.example.Quiz.dto.Responsedto;
-import com.example.Quiz.dto.reqDTO;
-import com.example.Quiz.entities.Quiz;
-import com.example.Quiz.entities.Response;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

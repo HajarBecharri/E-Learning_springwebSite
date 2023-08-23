@@ -8,19 +8,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="User" />
-        <module name="student" />
         <module name="subject" />
-        <module name="Reporting-Analytics" />
-        <module name="User-Authentication" />
         <module name="getway" />
         <module name="config-server" />
         <module name="notification" />
-        <module name="teacher" />
         <module name="Quiz" />
         <module name="discovery" />
+        <module name="chagpt" />
         <module name="class" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Reporting-Analytics" target="17" />
+      <module name="student" target="17" />
+      <module name="teacher" target="17" />
+      <module name="User-Authentication" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -28,6 +31,7 @@
       <module name="Reporting-Analytics" options="-parameters" />
       <module name="User" options="-parameters" />
       <module name="User-Authentication" options="-parameters" />
+      <module name="chagpt" options="-parameters" />
       <module name="class" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery" options="-parameters" />

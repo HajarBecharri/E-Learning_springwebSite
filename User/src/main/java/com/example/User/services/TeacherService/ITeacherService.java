@@ -15,5 +15,5 @@ public interface ITeacherService {
     List <Teacher> SearchTeachersByAlias(String alias);
     List <Teacher> GetTeachers();
 
-    String CreateQuiz();
+
 }

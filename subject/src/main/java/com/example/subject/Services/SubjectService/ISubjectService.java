@@ -18,4 +18,6 @@ public interface ISubjectService {
     List <Subject> getSubjectByTeacher(Long id);
 
 
+
+
 }

@@ -56,8 +56,5 @@ public class TeacherService implements ITeacherService{
         return teacherRepo.findAll();
     }
 
-    @Override
-    public String CreateQuiz() {
-        return null;
-    }
+
 }

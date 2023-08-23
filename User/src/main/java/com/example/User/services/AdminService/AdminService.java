@@ -12,20 +12,6 @@ import java.util.List;
 public class AdminService implements  IAdminService{
 
     private final UserRepository userRep;
-    @Override
-    public List<QuizData> GetAll() {
-        return null;
-    }
-
-    @Override
-    public List<QuizData> GetDataBySeanceId(Long id) {
-        return null;
-    }
-
-    @Override
-    public List<QuizData> GetDataByChapId(Long id) {
-        return null;
-    }
 
     @Override
     public List<User> AllUsers() {
