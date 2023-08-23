@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/User-Authentication/pom.xml" />
         <option value="$PROJECT_DIR$/Quiz/pom.xml" />
         <option value="$PROJECT_DIR$/chagpt/pom.xml" />
+        <option value="$PROJECT_DIR$/RealTimeMeet/pom.xml" />
+        <option value="$PROJECT_DIR$/meeting/pom.xml" />
+        <option value="$PROJECT_DIR$/../backend/meeting/pom.xml" />
       </list>
     </option>
   </component>

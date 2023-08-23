@@ -7,18 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="User" />
-        <module name="subject" />
         <module name="getway" />
         <module name="config-server" />
         <module name="notification" />
+        <module name="User" />
         <module name="Quiz" />
+        <module name="subject" />
         <module name="discovery" />
         <module name="chagpt" />
         <module name="class" />
+        <module name="meeting" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="meeting (1)" target="17" />
+      <module name="meeting (2)" target="17" />
+      <module name="RealTimeMeet" target="17" />
       <module name="Reporting-Analytics" target="17" />
       <module name="student" target="17" />
       <module name="teacher" target="17" />
@@ -28,6 +32,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Quiz" options="-parameters" />
+      <module name="RealTimeMeet" options="-parameters" />
       <module name="Reporting-Analytics" options="-parameters" />
       <module name="User" options="-parameters" />
       <module name="User-Authentication" options="-parameters" />
@@ -36,6 +41,9 @@
       <module name="config-server" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="getway" options="-parameters" />
+      <module name="meeting" options="-parameters" />
+      <module name="meeting (1)" options="-parameters" />
+      <module name="meeting (2)" options="-parameters" />
       <module name="notification" options="-parameters" />
       <module name="student" options="-parameters" />
       <module name="subject" options="-parameters" />
