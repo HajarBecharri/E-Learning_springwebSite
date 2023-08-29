@@ -17,7 +17,7 @@ public class QuizController {
     @Autowired
     private IQuizService service;
 
-    @GetMapping (path = "/findQuizByModule/{id}")
+    @GetMapping (path = "/findQuizBySubject/{id}")
     public ResponseEntity<List<Quiz>> findBySubject(@PathVariable Long id){
         List<Quiz> quizs = service.getQuizBySeance(id);
         return ResponseEntity.ok(quizs);

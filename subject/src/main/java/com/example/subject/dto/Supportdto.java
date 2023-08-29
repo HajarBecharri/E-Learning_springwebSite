@@ -11,4 +11,5 @@ public class Supportdto {
     private Seance s ;
     private String name;
     private String description;
+    private String link;
 }

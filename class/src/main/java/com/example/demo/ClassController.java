@@ -25,12 +25,12 @@ public class ClassController {
         return service.getClassById(id);
     }
     @DeleteMapping(path = "/remove/{id}")
-    public String removeStudentById(@PathVariable Long id){
+    public String removeClassById(@PathVariable Long id){
         return service.removeClassById(id);
     }
 
     @PostMapping(path="/add")
-    public ResponseEntity<?> signupUser(@RequestBody ClassDTO c) {
+    public ResponseEntity<?> addClass(@RequestBody ClassDTO c) {
         CreatCl cl = service.AddClass(c);
         if (cl== null){
             return new ResponseEntity<>("Class not created, come again later!", HttpStatus.BAD_REQUEST);

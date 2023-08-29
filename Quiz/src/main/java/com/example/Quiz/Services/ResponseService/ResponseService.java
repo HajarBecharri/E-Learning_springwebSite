@@ -45,10 +45,10 @@ public class ResponseService implements IResponseService {
 
             if(repo.existsById(id)){
                 repo.deleteById(id);
-                return "Class is deleted it";
+                return "Response is deleted it";
             }
             else{
-                return "Class not exist";
+                return "Response not exist";
             }
 
     }

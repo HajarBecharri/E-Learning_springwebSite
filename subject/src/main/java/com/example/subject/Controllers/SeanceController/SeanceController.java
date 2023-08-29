@@ -41,7 +41,7 @@ public class SeanceController {
     }
 
     @PostMapping (path = "/addSeance")
-    public ResponseEntity<String> findByClass(@RequestBody Seancedto s){
+    public ResponseEntity<String> addSeance(@RequestBody Seancedto s){
         return service.addSeance(s);
     }
 }

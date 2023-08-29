@@ -28,11 +28,15 @@ spring:
         - id: notifications
           uri: http://localhost:8040
           predicates:
-            - Path=/api/v1/notifications/**
-        - id: ReportingAnalytics
-          uri: http://localhost:8063
+            - Path=/notifications/**
+        - id: chagpts
+          uri: http://localhost:8088
           predicates:
-            - Path=/api/v1/Analytics/**
+            - Path=/bot/**
+        - id: meetings
+          uri: http://localhost:8077
+          predicates:
+            - Path=/call/**
 
 
 

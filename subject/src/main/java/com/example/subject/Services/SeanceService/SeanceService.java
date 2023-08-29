@@ -44,10 +44,10 @@ public class SeanceService implements  ISeanceService {
     public String removeSeance(Long id) {
         if(repo.existsById(id)){
             repo.deleteById(id);
-            return "Class is deleted it";
+            return "Seance is deleted it";
         }
         else{
-            return "Class not exist";
+            return "Seance not exist";
         }
     }
 
@@ -65,7 +65,7 @@ public class SeanceService implements  ISeanceService {
            s.setStartTime(seance.getStartTime());
 
             return repo.save(s);
-        }).orElseThrow(() -> new RuntimeException("Student Not Found"));
+        }).orElseThrow(() -> new RuntimeException("Seance Not Found"));
     }
 
 

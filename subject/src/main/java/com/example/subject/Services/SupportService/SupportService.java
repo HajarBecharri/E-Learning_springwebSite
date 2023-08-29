@@ -25,7 +25,7 @@ public class SupportService implements ISupportService {
         CourseSupport cs =new CourseSupport() ;
         cs.setName(support.getName());
         cs.setDescription(support.getDescription());
-        cs.setLink("");
+        cs.setLink(support.getLink());
         cs.setSeance(support.getS());
 
         CourseSupport savedSupport=repo.save(cs);
@@ -33,10 +33,10 @@ public class SupportService implements ISupportService {
 
         if (savedSupport.getId() != null) {
             return ResponseEntity.status(HttpStatus.CREATED)
-                    .body("Seance created successfully with ID: " + savedSupport.getId());
+                    .body("support created successfully with ID: " + savedSupport.getId());
         } else {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Failed to create Seance");
+                    .body("Failed to create Support");
         }
     }
 

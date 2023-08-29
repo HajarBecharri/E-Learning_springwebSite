@@ -22,10 +22,10 @@ public class SubjectService implements ISubjectService{
     public String removeSubjectById(Long id) {
         if(repo.existsById(id)){
             repo.deleteById(id);
-            return "Class is deleted it";
+            return "subject is deleted it";
         }
         else{
-            return "Class not exist";
+            return "subject not exist";
         }
     }
 

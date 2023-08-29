@@ -30,7 +30,7 @@ public class SupportController {
     }
 
     @PostMapping (path = "/addSupport")
-    public ResponseEntity<String> findByClass(@RequestBody Supportdto s){
+    public ResponseEntity<String> addSupport(@RequestBody Supportdto s){
         return service.addSupport(s);
     }
 }
